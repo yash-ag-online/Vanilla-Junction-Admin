@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
+import Wrapper from './components/wrapper';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <></>,
+    element: <Wrapper />,
     children: [],
   },
 ]);
