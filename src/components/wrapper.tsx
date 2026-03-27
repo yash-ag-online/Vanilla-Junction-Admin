@@ -5,7 +5,7 @@ import Main from '../components/main';
 
 const Wrapper = () => {
   return (
-    <div className="wrapper flex flex-col min-h-screen w-full max-w-6xl mx-auto px-4 sm:px-0" id="wrapper">
+    <div className="wrapper flex flex-col min-h-screen w-full max-w-6xl mx-auto px-4 xl:px-0" id="wrapper">
       <Header />
       <Main>
         <Outlet />
