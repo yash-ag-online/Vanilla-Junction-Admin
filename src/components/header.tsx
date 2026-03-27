@@ -26,7 +26,7 @@ const AccountDropDown = ({
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
-          <Button variant="ghost" size="icon" className="flex items-center justify-center">
+          <Button variant="ghost" size="icon" className="flex items-center justify-center overflow-hidden">
             <Avatar className={'rounded-sm'}>
               <AvatarImage src={avatarUrl} alt={avatarUrlAtl} className={'rounded-sm'} />
               <AvatarFallback className={'rounded-sm'}>{avatarFallback}</AvatarFallback>
