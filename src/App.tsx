@@ -1,7 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import Wrapper from './components/wrapper';
+import Auth from './pages/auth';
+import { Toaster } from '@/components/ui/sonner';
+import { UserContextProvider } from './providers/user-provider';
 
 const router = createBrowserRouter([
+  {
+    path: '/auth',
+    element: <Auth />,
+  },
   {
     path: '/',
     element: <Wrapper />,
@@ -12,7 +19,10 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <UserContextProvider>
+        <RouterProvider router={router} />
+        <Toaster />
+      </UserContextProvider>
     </>
   );
 }
